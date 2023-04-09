@@ -6,6 +6,8 @@ import UserController
     from "./controllers/users/users-controller.js"
 import TuitsController
     from "./controllers/tuits/tuits-controller.js";
+import mongoose from "mongoose";
+mongoose.connect('mongodb+srv://giuseppi:supersecretpassword@cs5610.k1fxsps.mongodb.net/?retryWrites=true&w=majority');
 const app = express();
 app.use(cors())
 app.use(express.json());
